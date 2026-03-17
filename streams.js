@@ -27,8 +27,6 @@ server.on('request', (request, response) => {
     // Solution - 3
     const readable = fs.createReadStream('test-file.txt');
     readable.pipe(response);
-
-
 });
 
 server.listen(8000, '127.0.0.1', () => {
